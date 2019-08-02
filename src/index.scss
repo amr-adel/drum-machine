@@ -54,7 +54,7 @@ body {
 
 #root {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,5 +127,52 @@ body {
   & .credit {
     text-align: right;
     padding: 0 2rem;
+  }
+}
+
+// DRUM MACHINE ===============================================================================
+#drum-machine {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--color-primary-dark);
+  border-radius: 3px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  grid-template-rows: repeat(4, minmax(8rem, 1fr));
+  grid-template-columns: repeat(3, minmax(8rem, 1fr));
+  grid-gap: 2rem;
+
+  & #display {
+    border-radius: 3px;
+    border: 3px solid var(--color-primary);
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / span 3;
+  }
+
+  & .drum-pad {
+    border-radius: 3px;
+    border: 3px solid var(--color-primary);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s ease-out;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+
+    &.active {
+      background-color: var(--color-primary);
+    }
   }
 }

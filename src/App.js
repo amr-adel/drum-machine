@@ -9,7 +9,16 @@ function App() {
         </div>
       </header>
       <main id='drum-machine'>
-        <h1>drum machine</h1>
+        <div id='display'>party time!!</div>
+        <button className='drum-pad'>q</button>
+        <button className='drum-pad'>w</button>
+        <button className='drum-pad'>e</button>
+        <button className='drum-pad'>a</button>
+        <button className='drum-pad'>s</button>
+        <button className='drum-pad'>d</button>
+        <button className='drum-pad'>z</button>
+        <button className='drum-pad'>x</button>
+        <button className='drum-pad'>c</button>
       </main>
       <footer className='footer'>
         <div className='centered'>
