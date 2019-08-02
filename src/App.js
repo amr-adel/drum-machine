@@ -1,6 +1,13 @@
 import React from 'react'
 
 function App() {
+  const getRandomColor = () => {
+    const colors = ['#F94EF3', '#814EF9', '#E12243', '#F9B64E', '#53FC2F']
+    const randomIndex = Math.floor(Math.random() * colors.length)
+    const randomColor = colors[randomIndex]
+
+    return randomColor
+  }
   return (
     <>
       <header className='header'>
@@ -10,15 +17,33 @@ function App() {
       </header>
       <main id='drum-machine'>
         <div id='display'>party time!!</div>
-        <button className='drum-pad'>q</button>
-        <button className='drum-pad'>w</button>
-        <button className='drum-pad'>e</button>
-        <button className='drum-pad'>a</button>
-        <button className='drum-pad'>s</button>
-        <button className='drum-pad'>d</button>
-        <button className='drum-pad'>z</button>
-        <button className='drum-pad'>x</button>
-        <button className='drum-pad'>c</button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          q
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          w
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          e
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          a
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          s
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          d
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          z
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          x
+        </button>
+        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
+          c
+        </button>
       </main>
       <footer className='footer'>
         <div className='centered'>

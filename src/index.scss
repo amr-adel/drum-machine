@@ -161,6 +161,7 @@ body {
   & .drum-pad {
     border-radius: 3px;
     border: 3px solid var(--color-primary);
+    color: var(--color-primary);
     font-size: 1.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -169,10 +170,12 @@ body {
 
     &:hover {
       background-color: var(--color-primary);
+      color: var(--color-primary-dark);
     }
-
+    
     &.active {
       background-color: var(--color-primary);
+      color: var(--color-primary-dark);
     }
   }
 }
