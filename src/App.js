@@ -4,7 +4,9 @@ function App() {
   return (
     <>
       <header className='header'>
-        <h1>header</h1>
+        <div className='centered'>
+          <h1 className='brand'>Drum Machine</h1>
+        </div>
       </header>
       <main id='drum-machine'>
         <h1>drum machine</h1>
