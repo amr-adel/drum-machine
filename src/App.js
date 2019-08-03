@@ -13,6 +13,7 @@ function App() {
     const drumPad = e.target
     drumPad.style.cssText = `--color-primary: ${getRandomColor()};`
     let beat = drumPad.querySelector('.clip')
+    document.getElementById('display').innerText = (drumPad.id).replace(/[0-]/g, ' ') + '!!'
     beat.play()
   }
 
