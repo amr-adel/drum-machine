@@ -8,6 +8,14 @@ function App() {
 
     return randomColor
   }
+
+  const makeABeat = e => {
+    const drumPad = e.target
+    drumPad.style.cssText = `--color-primary: ${getRandomColor()};`
+    let beat = drumPad.querySelector('.clip')
+    beat.play()
+  }
+
   return (
     <>
       <header className='header'>
@@ -17,32 +25,32 @@ function App() {
       </header>
 
       <main id='drum-machine'>
-        <div id='display'>party time!!</div>
-        <button className='drum-pad' id='kick-big' style={{ '--color-primary': getRandomColor() }}>
+        <div id='display'>Make Some Noise!!</div>
+        <button className='drum-pad' id='kick-big' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='Q' src='./drum-samples/kick-big.mp3' />Q
         </button>
-        <button className='drum-pad' id='kick-classic' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='kick-classic' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='W' src='./drum-samples/kick-classic.mp3' />W
         </button>
-        <button className='drum-pad' id='kick-cultivator' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='kick-cultivator' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='E' src='./drum-samples/kick-cultivator.mp3' />E
         </button>
-        <button className='drum-pad' id='kick-heavy' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='kick-heavy' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='A' src='./drum-samples/kick-heavy.mp3' />A
         </button>
-        <button className='drum-pad' id='kick-newwave' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='kick-newwave' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='S' src='./drum-samples/kick-newwave.mp3' />S
         </button>
-        <button className='drum-pad' id='kick-oldschool' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='kick-oldschool' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='D' src='./drum-samples/kick-oldschool.mp3' />D
         </button>
-        <button className='drum-pad' id='tom-808' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='tom-808' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='Z' src='./drum-samples/tom-808.mp3' />Z
         </button>
-        <button className='drum-pad' id='tom-acoustic01' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='tom-acoustic01' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='X' src='./drum-samples/tom-acoustic01.mp3' />X
         </button>
-        <button className='drum-pad' id='tom-acoustic02' style={{ '--color-primary': getRandomColor() }}>
+        <button className='drum-pad' id='tom-acoustic02' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e)}>
           <audio className='clip' id='C' src='./drum-samples/tom-acoustic02.mp3' />C
         </button>
       </main>
