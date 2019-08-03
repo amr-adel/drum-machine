@@ -110,7 +110,7 @@ class App extends Component {
               </p>
               <p>
                 Drum Samples from{' '}
-                <a href='ttp://99sounds.org/drum-samples/' target='_blank' rel='noopener noreferrer'>
+                <a href='http://99sounds.org/drum-samples/' target='_blank' rel='noopener noreferrer'>
                   99Sounds
                 </a>
               </p>

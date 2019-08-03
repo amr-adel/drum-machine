@@ -8,4 +8,4 @@ This project was part of the [FreeCodeCamp](https://learn.freecodecamp.org/front
 
 ---
 
-Background from [Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/random-grey-variations/) | Drum Samples from [99Sounds](ttp://99sounds.org/drum-samples/) | Bootstrapped by [create-react-app](https://github.com/facebook/create-react-app)
+Background from [Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/random-grey-variations/) | Drum Samples from [99Sounds](http://99sounds.org/drum-samples/) | Bootstrapped by [create-react-app](https://github.com/facebook/create-react-app)
