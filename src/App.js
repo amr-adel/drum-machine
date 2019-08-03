@@ -15,36 +15,38 @@ function App() {
           <h1 className='brand'>Drum Machine</h1>
         </div>
       </header>
+
       <main id='drum-machine'>
         <div id='display'>party time!!</div>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          q
+        <button className='drum-pad' id='kick-big' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='Q' src='./drum-samples/kick-big.mp3' />Q
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          w
+        <button className='drum-pad' id='kick-classic' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='W' src='./drum-samples/kick-classic.mp3' />W
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          e
+        <button className='drum-pad' id='kick-cultivator' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='E' src='./drum-samples/kick-cultivator.mp3' />E
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          a
+        <button className='drum-pad' id='kick-heavy' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='A' src='./drum-samples/kick-heavy.mp3' />A
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          s
+        <button className='drum-pad' id='kick-newwave' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='S' src='./drum-samples/kick-newwave.mp3' />S
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          d
+        <button className='drum-pad' id='kick-oldschool' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='D' src='./drum-samples/kick-oldschool.mp3' />D
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          z
+        <button className='drum-pad' id='tom-808' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='Z' src='./drum-samples/tom-808.mp3' />Z
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          x
+        <button className='drum-pad' id='tom-acoustic01' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='X' src='./drum-samples/tom-acoustic01.mp3' />X
         </button>
-        <button className='drum-pad' style={{ '--color-primary': getRandomColor() }}>
-          c
+        <button className='drum-pad' id='tom-acoustic02' style={{ '--color-primary': getRandomColor() }}>
+          <audio className='clip' id='C' src='./drum-samples/tom-acoustic02.mp3' />C
         </button>
       </main>
+
       <footer className='footer'>
         <div className='centered'>
           <aside className='info'>
