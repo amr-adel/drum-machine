@@ -62,7 +62,8 @@ body {
 }
 
 .centered {
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -176,6 +177,41 @@ body {
     &.active {
       background-color: var(--color-primary);
       color: var(--color-primary-dark);
+    }
+  }
+}
+
+// MEDAI QUERIES ===============================================================================
+@media screen and (max-width: 1024px) {
+  #drum-machine .drum-pad:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  #drum-machine {
+    grid-template-rows: repeat(4, minmax(10rem, 1fr));
+    grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  }
+
+  .footer .centered {
+    display: flex;
+    flex-direction: column;
+
+    & .info,
+    & .credit {
+      text-align: center;
+    }
+
+    & .info {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--color-grey);
     }
   }
 }
