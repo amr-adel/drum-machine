@@ -17,7 +17,7 @@ class App extends Component {
     const makeABeat = drumPad => {
       drumPad.style.cssText = `--color-primary: ${getRandomColor()};`
       let beat = drumPad.querySelector('.clip')
-      document.getElementById('display').innerText = drumPad.id.replace(/[0-]/g, ' ') + '!!'
+      document.getElementById('display').innerText = drumPad.id.replace(/[-]/g, ' ') + '!!'
       beat.play()
     }
 
@@ -52,11 +52,11 @@ class App extends Component {
           <button className='drum-pad' id='tom-808' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e.target)}>
             <audio className='clip' id='Z' src='./drum-samples/tom-808.mp3' />Z
           </button>
-          <button className='drum-pad' id='tom-acoustic01' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e.target)}>
-            <audio className='clip' id='X' src='./drum-samples/tom-acoustic01.mp3' />X
+          <button className='drum-pad' id='tom-acoustic-1' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e.target)}>
+            <audio className='clip' id='X' src='./drum-samples/tom-acoustic-1.mp3' />X
           </button>
-          <button className='drum-pad' id='tom-acoustic02' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e.target)}>
-            <audio className='clip' id='C' src='./drum-samples/tom-acoustic02.mp3' />C
+          <button className='drum-pad' id='tom-acoustic-2' style={{ '--color-primary': getRandomColor() }} onClick={e => makeABeat(e.target)}>
+            <audio className='clip' id='C' src='./drum-samples/tom-acoustic-2.mp3' />C
           </button>
         </main>
 
